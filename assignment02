@@ -1,0 +1,164 @@
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ cd ~
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ 
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls
+ Arduino   Documents   Pictures   STM32Cube     'Untitled Document 1'
+ cat       Downloads   Public     STM32CubeIDE   Untitled.ipynb
+ Desktop   Music       snap       Templates      Videos
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ cd Desktop
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop$ ls
+ CAssignments   demo01.c      IOT_Assignment   labexam_ML            'New Folder 1'   work
+'daily work'    emptable.py  'labexam C'       LICENSE.electron.txt   stm             work.zip
+ Day08          git          'labexam C.zip'   MachineLearning        STM32CubeIDE
+ dc.1          'git repos'   'labExam IOT'    'New Folder'           'VS CODE'
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop$ cd 'git repos'
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/git repos$ ls
+ C-Ass   EOS   IOT   MicroController  'pass&usrname'
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/git repos$ cd EOS
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/git repos/EOS$ ls
+hello  one  structure
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/git repos/EOS$ cd one
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/git repos/EOS/one$ cd two
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/git repos/EOS/one/two$ cd three
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/git repos/EOS/one/two/three$ cd four
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/git repos/EOS/one/two/three/four$ cd five
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/git repos/EOS/one/two/three/four/five$ ls
+55.txt  5.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/git repos/EOS/one/two/three/four/five$ cd  ~
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls
+ Arduino   Documents   Pictures   STM32Cube     'Untitled Document 1'
+ cat       Downloads   Public     STM32CubeIDE   Untitled.ipynb
+ Desktop   Music       snap       Templates      Videos
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls Desktop/git repos/EOS/one/two/three/four/five
+ls: cannot access 'repos/EOS/one/two/three/four/five': No such file or directory
+Desktop/git:
+ecp  EOS  iot  mcpi  token
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls /Desktop/git repos/EOS/one/two/three/four/five
+ls: cannot access '/Desktop/git': No such file or directory
+ls: cannot access 'repos/EOS/one/two/three/four/five': No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls Desktop/git repos/EOS/one/two/three/four/five
+ls: cannot access 'repos/EOS/one/two/three/four/five': No such file or directory
+Desktop/git:
+ecp  EOS  iot  mcpi  token
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls /Desktop/git repos
+ls: cannot access '/Desktop/git': No such file or directory
+ls: cannot access 'repos': No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls Desktop/git repos
+ls: cannot access 'repos': No such file or directory
+Desktop/git:
+ecp  EOS  iot  mcpi  token
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls Desktop/gitrepos
+ C-Ass   EOS   IOT   MicroController  'pass&usrname'
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls Desktop/gitrepos/EOS/one/two/three/four/five
+55.txt  5.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls
+ Arduino   Documents   Pictures   STM32Cube     'Untitled Document 1'
+ cat       Downloads   Public     STM32CubeIDE   Untitled.ipynb
+ Desktop   Music       snap       Templates      Videos
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls Desktop/gitrepos/EOS/one/two/three/four/five
+55.txt  5.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls
+ Arduino   Documents   Pictures   STM32Cube     'Untitled Document 1'
+ cat       Downloads   Public     STM32CubeIDE   Untitled.ipynb
+ Desktop   Music       snap       Templates      Videos
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls Desktop/gitrepos/EOS/one/two/three/four
+444.txt  44.txt  4.txt  five
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls Desktop/gitrepos/EOS/one/two/three/four cat>>44.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls Desktop/gitrepos/EOS/one/two/three/four
+444.txt  44.txt  4.txt  five
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls
+ 44.txt    Desktop     Music      snap           Templates              Videos
+ Arduino   Documents   Pictures   STM32Cube     'Untitled Document 1'
+ cat       Downloads   Public     STM32CubeIDE   Untitled.ipynb
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls Desktop/gitrepos/EOS/one/two/three/four
+444.txt  44.txt  4.txt  five
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$  Desktop/gitrepos/EOS/one/two/three/four/cat>>44.txt
+bash: Desktop/gitrepos/EOS/one/two/three/four/cat: No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ cat>>44.txt Desktop/gitrepos/EOS/one/two/three/four
+cat: Desktop/gitrepos/EOS/one/two/three/four: Is a directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls Desktop/gitrepos/EOS/one/two/three/four cat>>44.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls Desktop/gitrepos/EOS/one/two/three/four
+444.txt  44.txt  4.txt  five
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls
+ 44.txt    Desktop     Music      snap           Templates              Videos
+ Arduino   Documents   Pictures   STM32Cube     'Untitled Document 1'
+ cat       Downloads   Public     STM32CubeIDE   Untitled.ipynb
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls
+ Arduino   Documents   Music      Public   STM32Cube      Templates              Untitled.ipynb
+ Desktop   Downloads   Pictures   snap     STM32CubeIDE  'Untitled Document 1'   Videos
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$  Desktop/gitrepos/EOS/one/two/three/four
+bash: Desktop/gitrepos/EOS/one/two/three/four: Is a directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls
+ Arduino   Documents   Music      Public   STM32Cube      Templates              Untitled.ipynb
+ Desktop   Downloads   Pictures   snap     STM32CubeIDE  'Untitled Document 1'   Videos
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls Desktop/gitrepos/EOS/one/two/three/four
+444.txt  44.txt  4.txt  five
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ echo "Ashu" > Desktop/gitrepos/EOS/one/two/three/four/44.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ echo "Ashutosh" > Desktop/gitrepos/EOS/one/two/three/four/44.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls
+ Arduino   Documents   Music      Public   STM32Cube      Templates              Untitled.ipynb
+ Desktop   Downloads   Pictures   snap     STM32CubeIDE  'Untitled Document 1'   Videos
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls Desktop/gitrepos/EOS/one/two/three/four/five
+55.txt  5.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ rm Desktop/gitrepos/EOS/one/two/three/four/five/5.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ ls Desktop/gitrepos/EOS/one/two/three/four/five
+55.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ cd Desktop
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop$ cd gitrepos
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos$ cd EOS
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS$ cd one/two/three/four/five/
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ ls
+55.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ ls Desktop/gitrepos/EOS/one/two/three
+ls: cannot access 'Desktop/gitrepos/EOS/one/two/three': No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ ls Desktop/gitrepos/EOS/one/two/three/
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ ls /Desktop/gitrepos/EOS/one/two/three
+ls: cannot access '/Desktop/gitrepos/EOS/one/two/three': No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ ls
+55.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ echo "Desd" > ../three/3.txt
+bash: ../three/3.txt: No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ ls Desktop/gitrepos/EOS/one/two
+ls: cannot access 'Desktop/gitrepos/EOS/one/two': No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ ls -l Desktop/gitrepos/EOS
+ls: cannot access 'Desktop/gitrepos/EOS': No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ ls
+55.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ ls /Desktop/gitrepos/EOS/one/two/three ls
+ls: cannot access '/Desktop/gitrepos/EOS/one/two/three': No such file or directory
+ls: cannot access 'ls': No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ /Desktop/gitrepos/EOS/one/two/three ls
+bash: /Desktop/gitrepos/EOS/one/two/three: No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ /Desktop/gitrepos/EOS/one/two/three$ls
+bash: /Desktop/gitrepos/EOS/one/two/three: No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ /Desktop/gitrepos/EOS/one/two/three$ ls
+bash: /Desktop/gitrepos/EOS/one/two/three$: No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ ls /home/sunbeam/Desktop/gitrepos/EOS/one/two/three/
+333.txt  33.txt  3.txt  four
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ ls
+55.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ lsunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ echo "DESD" /home/sunbeam/Desktop/gitrepos/EOS/one/two/three/3.txt
+DESD /home/sunbeam/Desktop/gitrepos/EOS/one/two/three/3.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ ls /home/sunbeam/Desktop/gitrepos/EOS/one/two/three/
+333.txt  33.txt  3.txt  four
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ ls
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ cat /home/sunbeam/Desktop/gitrepos/EOS/one/two/three/3.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ cat > /home/sunbeam/Desktop/gitrepos/EOS/one/two/three/3.txt
+DESD
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ ls
+55.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ cat > /home/sunbeam/Desktop/gitrepos/EOS/one/two/
+bash: /home/sunbeam/Desktop/gitrepos/EOS/one/two/: Is a directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ ls /home/sunbeam/Desktop/gitrepos/EOS/one/two/
+222.txt  22.txt  2.txt  three
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ rm /home/sunbeam/Desktop/gitrepos/EOS/one/two/222.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one/two/three/four/five$ cd /home/sunbeam/Desktop/gitrepos/EOS/one/
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ ls
+111.txt  11.txt  1.txt  two
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ rm -r Desktop/gitrepos/EOS/one/two/three/four/five
+rm: cannot remove 'Desktop/gitrepos/EOS/one/two/three/four/five': No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ rm -r /home/sunbeam/Desktop/gitrepos/EOS/one/two/three/four/five/
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ rm -r /home/sunbeam/Desktop/gitrepos/EOS/one/two/three/four/
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ cd ~
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~$ 
+
+

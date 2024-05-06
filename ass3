@@ -1,0 +1,234 @@
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS$ ls
+assignment02  hello  one  structure
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS$ cd one
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ ls
+111.txt  11.txt  1.txt  two
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ rename "s/111/222/"* .txt
+syntax error at line 2, at EOF, in:
+s/111/222/*
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ rename "s/111/222/" * .txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ ;s
+bash: syntax error near unexpected token `;'
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ ls
+11.txt  1.txt  222.txt  two
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ ln -s
+ln: missing file operand
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ ls -s /Desktop/gitrepos/EOS/one/important_file.txt
+ls: cannot access '/Desktop/gitrepos/EOS/one/important_file.txt': No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ ln -s /home/sunbeam/Desktop/gitrepos/EOS/important_file.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ ls
+11.txt  1.txt  222.txt  important_file.txt  two
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ ln /home/sunbeam/Desktop/gitrepos/EOS/important_file.txt
+ln: failed to access '/home/sunbeam/Desktop/gitrepos/EOS/important_file.txt': No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ ln /home/sunbeam/Desktop/gitrepos/EOS/one/imp.txt
+ln: failed to access '/home/sunbeam/Desktop/gitrepos/EOS/one/imp.txt': No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ ln
+ln: missing file operand
+Try 'ln --help' for more information.
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ ln --help
+Usage: ln [OPTION]... [-T] TARGET LINK_NAME
+  or:  ln [OPTION]... TARGET
+  or:  ln [OPTION]... TARGET... DIRECTORY
+  or:  ln [OPTION]... -t DIRECTORY TARGET...
+In the 1st form, create a link to TARGET with the name LINK_NAME.
+In the 2nd form, create a link to TARGET in the current directory.
+In the 3rd and 4th forms, create links to each TARGET in DIRECTORY.
+Create hard links by default, symbolic links with --symbolic.
+By default, each destination (name of new link) should not already exist.
+When creating hard links, each TARGET must exist.  Symbolic links
+can hold arbitrary text; if later resolved, a relative link is
+interpreted in relation to its parent directory.
+
+Mandatory arguments to long options are mandatory for short options too.
+      --backup[=CONTROL]      make a backup of each existing destination file
+  -b                          like --backup but does not accept an argument
+  -d, -F, --directory         allow the superuser to attempt to hard link
+                                directories (note: will probably fail due to
+                                system restrictions, even for the superuser)
+  -f, --force                 remove existing destination files
+  -i, --interactive           prompt whether to remove destinations
+  -L, --logical               dereference TARGETs that are symbolic links
+  -n, --no-dereference        treat LINK_NAME as a normal file if
+                                it is a symbolic link to a directory
+  -P, --physical              make hard links directly to symbolic links
+  -r, --relative              create symbolic links relative to link location
+  -s, --symbolic              make symbolic links instead of hard links
+  -S, --suffix=SUFFIX         override the usual backup suffix
+  -t, --target-directory=DIRECTORY  specify the DIRECTORY in which to create
+                                the links
+  -T, --no-target-directory   treat LINK_NAME as a normal file always
+  -v, --verbose               print name of each linked file
+      --help     display this help and exit
+      --version  output version information and exit
+
+The backup suffix is '~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.
+The version control method may be selected via the --backup option or through
+the VERSION_CONTROL environment variable.  Here are the values:
+
+  none, off       never make backups (even if --backup is given)
+  numbered, t     make numbered backups
+  existing, nil   numbered if numbered backups exist, simple otherwise
+  simple, never   always make simple backups
+
+Using -s ignores -L and -P.  Otherwise, the last option specified controls
+behavior when a TARGET is a symbolic link, defaulting to -P.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation <https://www.gnu.org/software/coreutils/ln>
+or available locally via: info '(coreutils) ln invocation'
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ ls
+11.txt  1.txt  222.txt  important_file.txt  two
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ ln /home/sunbeam/Desktop/gitrepos/EOS/one/imp.txt imp_copy.txt
+ln: failed to access '/home/sunbeam/Desktop/gitrepos/EOS/one/imp.txt': No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ stat /home/sunbeam/Desktop/gitrepos/EOS/one/
+  File: /home/sunbeam/Desktop/gitrepos/EOS/one/
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 803h/2051d	Inode: 686254      Links: 3
+Access: (0775/drwxrwxr-x)  Uid: ( 1000/ sunbeam)   Gid: ( 1000/ sunbeam)
+Access: 2024-05-06 17:23:56.202165824 +0530
+Modify: 2024-05-06 17:23:44.320095580 +0530
+Change: 2024-05-06 17:23:44.320095580 +0530
+ Birth: 2024-05-03 17:28:42.695567961 +0530
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ init 0,poweroff
+Expected single character argument.
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ init 0, poweroff
+Too many arguments.
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ init 6, reboot
+Too many arguments.
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ touch -t /home/sunbeam/Desktop/gitrepos/EOS/one/
+touch: invalid date format ‘/home/sunbeam/Desktop/gitrepos/EOS/one/’
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ touch -t /home/sunbeam/Desktop/gitrepos/EOS/one/202301011200
+touch: invalid date format ‘/home/sunbeam/Desktop/gitrepos/EOS/one/202301011200’
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ touch -t 202301011200
+touch: missing file operand
+Try 'touch --help' for more information.
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ touch --help
+Usage: touch [OPTION]... FILE...
+Update the access and modification times of each FILE to the current time.
+
+A FILE argument that does not exist is created empty, unless -c or -h
+is supplied.
+
+A FILE argument string of - is handled specially and causes touch to
+change the times of the file associated with standard output.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a                     change only the access time
+  -c, --no-create        do not create any files
+  -d, --date=STRING      parse STRING and use it instead of current time
+  -f                     (ignored)
+  -h, --no-dereference   affect each symbolic link instead of any referenced
+                         file (useful only on systems that can change the
+                         timestamps of a symlink)
+  -m                     change only the modification time
+  -r, --reference=FILE   use this file's times instead of current time
+  -t STAMP               use [[CC]YY]MMDDhhmm[.ss] instead of current time
+      --time=WORD        change the specified time:
+                           WORD is access, atime, or use: equivalent to -a
+                           WORD is modify or mtime: equivalent to -m
+      --help     display this help and exit
+      --version  output version information and exit
+
+Note that the -d and -t options accept different time-date formats.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation <https://www.gnu.org/software/coreutils/touch>
+or available locally via: info '(coreutils) touch invocation'
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ touch -t 202301011200.ss
+touch: invalid date format ‘202301011200.ss’
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ touch -t 2001011200 11.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ stat/home/sunbeam/Desktop/gitrepos/EOS/one/
+bash: stat/home/sunbeam/Desktop/gitrepos/EOS/one/: No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ stat 11.txt
+  File: 11.txt
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: 803h/2051d	Inode: 686507      Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/ sunbeam)   Gid: ( 1000/ sunbeam)
+Access: 2020-01-01 12:00:00.000000000 +0530
+Modify: 2020-01-01 12:00:00.000000000 +0530
+Change: 2024-05-06 17:42:21.327966395 +0530
+ Birth: 2024-05-03 17:29:42.810434922 +0530
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ whoami
+sunbeam
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ who am i
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ tty
+/dev/pts/1
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ users
+sunbeam
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ who
+sunbeam  tty2         2024-05-06 00:10 (tty2)
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ chmod
+chmod: missing operand
+Try 'chmod --help' for more information.
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ chmod 666 11.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ chmod 555 11.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ wc 11.txt
+0 0 0 11.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ wc -1 11.txt
+wc: invalid option -- '1'
+Try 'wc --help' for more information.
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ wc  11.txt
+0 0 0 11.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ who | wc 11.txt
+0 0 0 11.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ who | wc 
+      1       5      46
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ head | tail
+^C
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ head | tail 11.txt
+
+
+x
+^C  
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$  tail 11.txt | head 
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ head | tail 1.txt
+hi
+hi
+head, tail (using pipe)
+head, tail (using pipe)
+
+^[[A^C
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ head -n 2 | tail 1.txt
+hi
+hi
+head, tail (using pipe)
+head, tail (using pipe)
+
+^[[A^[[D^[[A^C
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ head -n 2 | tail 1.txt -n 2
+head, tail (using pipe)
+
+^C
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ 
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ cat 1.txt | sort | uniq
+
+head, tail (using pipe)
+hi
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ who | grep 1.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ who | grep "user*"
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ ls | grep one
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ ls | grep 1.txt
+11.txt
+1.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ ls | grep 
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ ls | grep one
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ ls | grep 2.txt
+222.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ ls -a | grep "^\."
+.
+..
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ ls
+11.txt  1.txt  222.txt  important_file.txt  two
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ ls -a | grep "^\."
+.
+..
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ tr 1.txt
+tr: missing operand after ‘1.txt’
+Two strings must be given when translating.
+Try 'tr --help' for more information.
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ tr 1.txt "A-Z"
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS/one$ tr 1.txt "A-Z"
+
+
