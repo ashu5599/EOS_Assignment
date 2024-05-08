@@ -1,0 +1,102 @@
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ cat data.txt
+cat: data.txt: No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ touch data.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ ls
+ass3  assignment02  data.txt  EOS_assignment01  README.md  scripts
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ cd data.txt
+bash: cd: data.txt: Not a directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ cat >> data.txt
+Linux is open source.
+In linux everything is file.
+files have permissions.
+files have inode numbers.
+files have size.    
+there are several types of files.
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ ls
+ass3  assignment02  data.txt  EOS_assignment01  README.md  scripts
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ cat data.txt
+Linux is open source.
+In linux everything is file.
+files have permissions.
+files have inode numbers.
+files have size.
+there are several types of files.
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ man wc
+]sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ cat -c data.tt 
+cat: invalid option -- 'c'
+Try 'cat --help' for more information.
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ ls -c data.txt
+data.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ ld
+ld: no input files
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ ls
+ass3  assignment02  data.txt  EOS_assignment01  README.md  scripts
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ ls grep -c data.txt
+ls: cannot access 'grep': No such file or directory
+data.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ grep -c data.txt
+ed
+^C  
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ grep -c data.txt
+2
+0
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ wc -c data.txt
+152 data.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ wc -w data.txt25 data.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ wc -m data.txt152 data.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ wc -l data.txt6 data.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ grep -c "files" data.txt
+4
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ grep -c "file" data.txt
+5
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ grep -v "file" data.txt
+Linux is open source.
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ grep -v "word" data.txt
+Linux is open source.
+In linux everything is file.
+files have permissions.
+files have inode numbers.
+files have size.
+there are several types of files.
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ grep -c "word" data.txt
+0
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ grep -c "^word" data.txt
+0
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ grep -c "$word" data.txt
+6
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ grep -c "^f" data.txt
+3
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ grep -c "$f" data.txt
+6
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ grep -c "$." data.txt
+0
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ grep -c ".$" data.txt
+6
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ grep -c "f$" data.txt
+0
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ grep head(2) data.txt
+bash: syntax error near unexpected token `('
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ ls -l -t | head -2
+total 56
+-rw-rw-r-- 1 sunbeam sunbeam   152 May  8 15:20 data.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ head -2 data.txt
+Linux is open source.
+In linux everything is file.
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ tail-2 data.txt
+tail-2: command not found
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ tail -2 data.txt
+files have size.
+there are several types of files.
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ man head and tail
+No manual entry for and
+--Man-- next: tail(1) [ view (return) | skip (Ctrl-D) | quit (Ctrl-C) ]
+^C
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ head -n 5 "$data.txt" | tail -n 3
+head: cannot open '.txt' for reading: No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ head -n 5 $data.txt | tail -n 3
+head: cannot open '.txt' for reading: No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec1xxx:~/Desktop/gitrepos/EOS_Assignment$ head -n 5 data.txt | tail -n 3
+files have permissions.
+files have inode numbers.
+files have size.
+sunbeam@sunbeam-HP-Pavi
